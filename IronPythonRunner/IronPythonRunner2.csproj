@@ -8,8 +8,8 @@
     <ProjectGuid>{5E3C72C7-5BED-49C8-8EA2-973B8EE1741F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IronPythonRunner</RootNamespace>
-    <AssemblyName>IronPythonRunner.csr</AssemblyName>
+    <RootNamespace>IronPythonRunner2</RootNamespace>
+    <AssemblyName>IronPythonRunner2.csr</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
