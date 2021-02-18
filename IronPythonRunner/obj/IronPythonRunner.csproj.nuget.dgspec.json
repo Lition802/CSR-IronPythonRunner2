@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\seaic\\source\\repos\\CSR-IronPythonRunner2\\IronPythonRunner\\IronPythonRunner.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\seaic\\source\\repos\\CSR-IronPythonRunner2\\IronPythonRunner\\IronPythonRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\seaic\\source\\repos\\CSR-IronPythonRunner2\\IronPythonRunner\\IronPythonRunner.csproj",
+        "projectName": "IronPythonRunner",
+        "projectPath": "C:\\Users\\seaic\\source\\repos\\CSR-IronPythonRunner2\\IronPythonRunner\\IronPythonRunner.csproj",
+        "packagesPath": "C:\\Users\\seaic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seaic\\source\\repos\\CSR-IronPythonRunner2\\IronPythonRunner\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\seaic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Costura.Fody": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "IronPython": {
+              "target": "Package",
+              "version": "[2.7.11, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
