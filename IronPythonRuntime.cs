@@ -85,7 +85,7 @@ namespace IronPythonRunner
                 Console.WriteLine("[IPYR2] Cannot Find The Libs，put it inside root directory!");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            Console.WriteLine("[IPYR2] Reading Plugins……");
+            Console.WriteLine("[IPYR2] Reading Plugins...");
             DirectoryInfo Allfolder = new DirectoryInfo(path);
             var tool = new ILR.ToolFunc();
             ScriptEngine pyEngine = Python.CreateEngine();
@@ -106,17 +106,17 @@ namespace IronPythonRunner
             {
                 try
                 {
-                    Console.WriteLine("[IPYR] Load\\ipy\\" + file.Name);
+                    Console.WriteLine("[IPYR2] Load\\ipy\\" + file.Name);
                     pyEngine.ExecuteFile(file.FullName,py_);
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine(file.Name + " Load Successful");
+                    Console.WriteLine("[IPYR2] " + file.Name + " Load Successful");
                     Console.ForegroundColor = ConsoleColor.White;
                 }
                 catch (Exception e)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine(e.Message);
-                    Console.WriteLine("Failed to load " + file.Name);
+                    Console.WriteLine("[IPYR2] Failed to load " + file.Name);
                     Console.ForegroundColor = ConsoleColor.White;
                 }
             }
@@ -126,7 +126,6 @@ namespace IronPythonRunner
                 ptr.Add(a.uuid, a.playerPtr);
                 return true;
             });
-
             api.addBeforeActListener(EventKey.onPlayerLeft, x =>
             {
                 var a = BaseEvent.getFrom(x) as PlayerLeftEvent;
@@ -136,16 +135,15 @@ namespace IronPythonRunner
         }
     }
 }
+
 namespace CSR
 {
     partial class Plugin
     {
-
         public static void onStart(MCCSAPI api)
         {
-            // TODO 此接口为必要实现
             IronPythonRunner.IronPythonRuntime.RunIronPython(api);
-            Console.WriteLine("[IronPythonRunner] 加载完成！");
+            Console.WriteLine("[IPYR2] IronPythonRunner2 loaded!");
         }
     }
 }
