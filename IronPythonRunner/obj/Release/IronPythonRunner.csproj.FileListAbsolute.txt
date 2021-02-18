@@ -1,0 +1,2 @@
+C:\Users\seaic\source\repos\CSR-IronPythonRunner2\IronPythonRunner\obj\Release\IronPythonRunner.csprojAssemblyReference.cache
+C:\Users\seaic\source\repos\CSR-IronPythonRunner2\IronPythonRunner\obj\Release\IronPythonRunner.csproj.CoreCompileInputs.cache
