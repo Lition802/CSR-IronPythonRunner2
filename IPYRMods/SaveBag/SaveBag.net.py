@@ -9,7 +9,6 @@ from System import IO
 formid = {}
 player = 0
 
-
 def svplayer_left(a):
     global player
     player -= 1
@@ -20,7 +19,7 @@ def svsavepack():
     while True:
         if player > 0:
             for x in json.loads(mc.getOnLinePlayers()):
-                i = mc.creatPlayerObject(x['uuid'])
+                i = ipyapi.creatPlayerObject(x['uuid'])
                 packdict = json.loads(i.InventoryContainer)
                 xx = 0
                 pack = ''

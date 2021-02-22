@@ -6,14 +6,12 @@ import thread
 formid = {}
 page = {}
 toname = {}
-def econinputcommand(a):
-    d = mc.AnalysisEvent(a)
+def econinputcommand(d):
     if d.cmd == '/econadmin' and IFOP(str(d.playername)):       
         econSendForm(str(d.playername),tool.GetShareFunc('GetUUID')(str(d.playername)),'main')
         return False
 
-def econformselect(a):
-    d = mc.AnalysisEvent(a)
+def econformselect(d):
     if int(d.formid) == int(formid[d.playername]) and d.selected != 'null':
         if page[d.playername] == 'main':
             j = json.loads(mc.getOnLinePlayers())

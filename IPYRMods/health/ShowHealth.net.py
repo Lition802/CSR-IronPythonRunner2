@@ -17,8 +17,7 @@ def healthleft(d):
     uuid.pop(d.playername)
     name.remove(d.playername)
     
-def healthrespawn(a):
-    d = mc.AnalysisEvent(a)
+def healthrespawn(d):
     if not tool.IfDir('./plugins/health'):
         mc.runcmd('scoreboard objectives add health dummy §4血量')
         mc.runcmd('scoreboard objectives setdisplay belowname health')
@@ -35,7 +34,7 @@ def showhealth():
     print '[ShowHealth] 线程开启'
     while len(name) > 0:
         for x in range(len(name)):
-            i = mc.creatPlayerObject(uuid[name[x]])
+            i = ipyapi.creatPlayerObject(uuid[name[x]])
             he = eval(str(i.Health))
             mc.runcmd("scoreboard players set \""+name[x]+"\" health "+str(int(he['value'])))
         time.sleep(1)
